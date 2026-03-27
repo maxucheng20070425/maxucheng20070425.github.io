@@ -1,0 +1,41 @@
+
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>汽车行驶动画</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .car {
+            width: 120px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation: drive 4s linear forwards;
+        }
+
+        @keyframes drive {
+            0% {
+                top: 0;
+                right: 0;
+                transform: translate(0, 0);
+            }
+            100% {
+                top: 100%;
+                right: 100%;
+                transform: translate(-100%, -100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="car" src="https://imgs.699pic.com/images/601/131/774.jpg!list1x.v2" alt="汽车">
+</body>
+</html>
